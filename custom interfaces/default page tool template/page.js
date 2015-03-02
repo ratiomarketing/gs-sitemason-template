@@ -1,7 +1,6 @@
 var toolsList = [];
 $.ajax({
-	// url:		'/custom_config?www.culer.com.sitemason.com/?ajax=listTools&someParamNecessaryForThisHack=1/bogus.js',
-	url:		'/custom_config?www.culer.com.sitemason.com/?ajax=listTools&someParamNecessaryForThisHack=1/bogus.js',
+	url:		'/custom_config?www.[domain].com.sitemason.com/?ajax=listTools&someParamNecessaryForThisHack=1/bogus.js',
 	dataType:	'json',
 	type:		'GET',
 	success:	function(_data) { if ($.isPlainObject(_data) && $.isArray(_data.items)) { toolsList = _data.items; } },
@@ -14,7 +13,7 @@ $.ajax({
 
 var galleries = [];
 $.ajax({
-	url:		'/custom_config?www.culer.com.sitemason.com/?ajax=listGalleries&someParamNecessaryForThisHack=1/bogus.js',
+	url:		'/custom_config?www.[domain].com.sitemason.com/?ajax=listGalleries&someParamNecessaryForThisHack=1/bogus.js',
 	dataType:	'json',
 	type:		'GET',
 	success:	function(_data) { if ($.isPlainObject(_data) && $.isArray(_data.items)) { galleries = _data.items; } },

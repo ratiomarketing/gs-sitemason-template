@@ -37,3 +37,6 @@ It also adds the following tab(s):
 		require_once('[path-to-file-relative-to-site-template]/listGalleries.php');
 		exit();
 	}
+
+##### NOTE:
+If you are using other custom interface files to affect individual page tools (by slug, for example), be sure to list this file AFTER the individualized file in the Sitemason -> Developer Settings -> Custom Interfaces listing.
