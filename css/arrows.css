@@ -1,3 +1,7 @@
+body {
+	margin: 50px;
+}
+
 .arrow {
 	width: 0px;
 	height: 0px;
@@ -10,33 +14,30 @@
 
 .arrow.arrow-up {
 	border-bottom-color: #000;
+	border-bottom-width: 16px;
 	top: 100%;
-	width: 16px;
-	height: 16px;
 }
 
 .arrow.arrow-down {
 	border-top-color: #000;
+	border-top-width: 16px;
 	bottom: 100%;
-	width: 15px;
-	height: 15px;
 }
 
 .arrow.arrow-left {
 	border-right-color: #000;
+	border-right-width: 16px;
 	left: 100%;
-	width: 16px;
-	height: 16px;
 }
 
 .arrow.arrow-right {
 	border-left-color: #000;
+	border-left-width: 16px;
 	right: 100%;
-	width: 16px;
-	height: 16px;
 }
 
 #arrow-up {
+	position: relative;
 	width: 100px;
 	height: 100px;
 	border: solid 1px #000;
