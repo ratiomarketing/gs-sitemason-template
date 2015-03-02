@@ -13,7 +13,7 @@ This template adds the following field(s):
 
 It also adds the following tab(s):
 
-* Picture   return
+* Picture
 
 
 # INSTRUCTIONS:
