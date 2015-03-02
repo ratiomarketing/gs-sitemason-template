@@ -8,8 +8,8 @@ INSTRUCTIONS:
 5. In the field "Match to this tool type", choose "Page"
 6. Add the following PHP to the top of your site template:
 
-
-
+PHP
+---
 	if($_GET['ajax'] == 'listTools') {
 		require_once('[path-to-file-relative-to-site-template]/listTools.php');
 		exit();
