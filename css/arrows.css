@@ -11,21 +11,29 @@
 .arrow.arrow-up {
 	border-bottom-color: #000;
 	top: 100%;
+	width: 16px;
+	height: 16px;
 }
 
 .arrow.arrow-down {
 	border-top-color: #000;
 	bottom: 100%;
+	width: 16px;
+	height: 16px;
 }
 
 .arrow.arrow-left {
 	border-right-color: #000;
 	left: 100%;
+	width: 16px;
+	height: 16px;
 }
 
 .arrow.arrow-right {
 	border-left-color: #000;
 	right: 100%;
+	width: 16px;
+	height: 16px;
 }
 
 #arrow-up {
