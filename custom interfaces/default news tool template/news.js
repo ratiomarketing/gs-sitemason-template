@@ -1,0 +1,3 @@
+modifyConf('itemPanel', function() {
+	
+});

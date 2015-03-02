@@ -21,7 +21,7 @@ It also adds the following tab(s):
 ## INSTRUCTIONS:
 
 1. Place "page.js" in the "smInterface" directory
-2. Place "listGalleries.php" and "listTools.php" in a sub-directory of the "smTemplate" directory
+2. Place "../data/listGalleries.php" and "../data/listTools.php" in a sub-directory of the "smTemplate" directory
 3. In the Sitemason interface, go to the "Developer Settings" tab, then the "Custom Interfaces" tab
 4. In the field "URL to custom interface Javascript file", type "http://www.[domain].com.sitemason.com/smInterface/page.js", replacing "[domain]" with your domain
 5. In the field "Match to this tool type", choose "Page"
