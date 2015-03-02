@@ -1,3 +1,5 @@
+# DESCRIPTION
+
 Sitemason's default page tool only has one field: Body/Description.
 
 This template adds the following field(s):
@@ -16,7 +18,7 @@ It also adds the following tab(s):
 * Picture
 
 
-# INSTRUCTIONS:
+## INSTRUCTIONS:
 
 1. Place "page.js" in the "smInterface" directory
 2. Place "listGalleries.php" and "listTools.php" in a sub-directory of the "smTemplate" directory
@@ -25,7 +27,7 @@ It also adds the following tab(s):
 5. In the field "Match to this tool type", choose "Page"
 6. Add the following PHP to the top of your site template:
 
-### PHP
+#### PHP
 	if($_GET['ajax'] == 'listTools') {
 		require_once('[path-to-file-relative-to-site-template]/listTools.php');
 		exit();
