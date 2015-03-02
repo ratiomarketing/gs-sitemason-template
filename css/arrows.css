@@ -44,7 +44,10 @@ body {
 	margin-top: -16px;
 }
 
-#arrow-up {
+#arrow-up,
+#arrow-down,
+#arrow-left,
+#arrow-right {
 	position: relative;
 	width: 100px;
 	height: 100px;
