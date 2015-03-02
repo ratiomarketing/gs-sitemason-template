@@ -1,0 +1,1 @@
+This should be our default page tool template.
