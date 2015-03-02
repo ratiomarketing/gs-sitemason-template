@@ -1,17 +1,3 @@
-/**
-	PHP at top of site template:
-
-		if($_GET['ajax'] == 'listTools') {
-			require_once('[path-to-file-relative-to-site-template]/listTools.php');
-			exit();
-		}
-
-		if($_GET['ajax'] == 'listGalleries') {
-			require_once('[path-to-file-relative-to-site-template]/listGalleries.php');
-			exit();
-		}
-**/
-
 var toolsList = [];
 $.ajax({
 	// url:		'/custom_config?www.culer.com.sitemason.com/?ajax=listTools&someParamNecessaryForThisHack=1/bogus.js',
@@ -41,8 +27,8 @@ $.ajax({
 
 modifyConf('toolPanel', function(){
 	var contentTab = this.getTab('contentTab');
+
 	var description = contentTab.getContentItem('description');
-		description.set('label', 'Body');
 
 		description.addContentItemBefore({
 			type: 	'field',
@@ -56,7 +42,30 @@ modifyConf('toolPanel', function(){
 			label: 	'Page Sub Header',
 		});
 
-		description.addContentItemAfter({
+		description.remove();
+
+		contentTab.getContentItem('custom_field_json.pageSubheader').addContentItemAfter({
+			width: 	'100%',
+			type: 	'editor',
+			name: 	'description',
+			label: 	'Body',
+			toolbar: [
+				['Bold','Italic','Underline','Strike'],
+				['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+				['Undo','Redo'],
+				['Copy','PasteText'],	
+		 		['NumberedList','BulletedList'],
+		 		['Outdent','Indent'], 
+				['Link','Unlink'],
+				['Image','Table'],
+				['Format'],
+				['Source'],
+				['Maximize'],
+				['RemoveFormat']
+			]
+		});
+
+		contentTab.getContentItem('description').addContentItemAfter({
 			width: 	'100%',
 			type: 	'field',
 			name: 	'custom_field_json.externalCTAText',
