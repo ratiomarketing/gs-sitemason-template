@@ -15,25 +15,33 @@ body {
 .arrow.arrow-up {
 	border-bottom-color: #000;
 	border-bottom-width: 16px;
-	top: 100%;
+	top: -32px;
+	left: 50%;
+	margin-left: -16px;
 }
 
 .arrow.arrow-down {
 	border-top-color: #000;
 	border-top-width: 16px;
-	bottom: 100%;
+	bottom: -32px;
+	left: 50%;
+	margin-left: -16px;
 }
 
 .arrow.arrow-left {
 	border-right-color: #000;
 	border-right-width: 16px;
-	left: 100%;
+	left: -32px;
+	top: 50%;
+	margin-top: -16px;
 }
 
 .arrow.arrow-right {
 	border-left-color: #000;
 	border-left-width: 16px;
-	right: 100%;
+	right: -32px;
+	top: 50%;
+	margin-top: -16px;
 }
 
 #arrow-up {
