@@ -1,0 +1,59 @@
+/* General Styles ------------- */
+html, input {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #333;
+}
+a, a:visited {
+	color: #b70f22;
+}
+a:hover {
+	color: #000;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0.8em 0 0.6em 0;
+	line-height: 1.2;
+}
+h1 {
+	font-size:2.4em;
+}
+h2 {
+	font-size:2em;
+}
+h3 {
+	font-size:1.6em;
+}
+h4 {
+	font-size:1.4em;
+}
+h5 {
+	font-size:1.3em;
+}
+
+/* Header ------------------- */
+ .site-header {
+	background: #111;
+}
+.site-logo {
+	text-decoration: none;
+	float:left;
+}
+.site-heading {
+	color: #fff;
+}
+.site-header .nav {
+	float: right;
+}
+.site-header .nav-link {
+	background: #333;
+	display: inline-block;
+	padding: .5em 1em;
+	color: #fff;
+	text-decoration: none;
+}
+.site-header .nav-link:hover, .site-header .nav-link:active {
+	background: #666;
+}
+.site-header .nav-link-active, .site-header .nav-link-active:hover {
+	background: #fff;
+	color: #333;
+}
