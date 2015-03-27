@@ -1,12 +1,3 @@
-<?php
-	// directory for assets: '/_dev' for dev site, '/_' for live) 
-    if (strpos($_SERVER['HTTP_HOST'],'.sitemason.com')) {
-        // uncomment after initial development - $assetDir = '/smTemplate/dev';
-        $assetDir = '/smTemplate';
-    } else {
-        $assetDir = '/smTemplate';
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -20,18 +11,16 @@
 				echo '<meta name="robots" content="noindex, nofollow">';
 			} 
 		?>
-		<link href="<?php echo $assetDir; ?>/css/reset.css" rel="stylesheet">
-		<link href="<?php echo $assetDir; ?>/css/style.css" rel="stylesheet">
+		<link href="<?=$smTemplateFolder;?>/css/reset.css" rel="stylesheet">
+		<link href="<?=$smTemplateFolder;?>/css/style.css" rel="stylesheet">
 	</head>
 	
 	<?php 
 		$bodyClass = 'body-' . $smCurrentTool->getSlug();
 	?>
 	<body class="<?php echo $bodyClass; ?>">
-		<header class="site-header clearfix">
-			<a class="site-logo" href="/"><h1 class="site-heading">The Boilerplate Template</h1></a>
-			<?php include('inc/nav.php'); ?>
-		</header>
+		<!-- Include the header -->
+		<?php include('inc/header.php'); ?>
 		
 		<section role="main" class="content">
 			<div class="content-main">
@@ -49,21 +38,16 @@
 		</section>
 		
 		
-		<footer class="site-footer">
-			<div class="content-footer">
-				<small class="footer-copyright">
-				<?php
-					echo 'copyright: '. $smCurrentFolder->getCopyright();
-				?>
-				</small>
-				<small class="footer-promo">
-				<?php
-					// Display the Footer data
-					echo $smCurrentFolder->getFooter();
-				?>
-				</small>
-			</div>
-		</footer>
+		<!-- Include the footer -->
+		<?php include('inc/footer.php'); ?>
+
+		<!-- jQuery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<!--[if lt IE 9]>-->
+			<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="<?=$smTemplateFolder?>/js/respond.min.js"></script>
+		<!--<![endif]-->
 
 	</body>
 </html>
